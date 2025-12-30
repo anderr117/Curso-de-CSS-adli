@@ -1,0 +1,40 @@
+/*SELECTORES*/
+/*--Selector Universal--*/
+*{
+    /*Se aplica a todo el documento*/
+    /*font-family define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado.
+    A diferencia de la mayoría de las propiedades CSS, los calores se separan con comas (",") para indicar que son valores alternativos*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--Selectores de etiqueta--*/
+h1{
+    background: red; /*Color para el fondo*/
+    color: white; /*Color a la letra*/
+}
+
+a{
+    font-size: 18px; /*Tamaño de la letra*/
+    color: green;
+    text-decoration: none;
+}
+
+footer a {
+    color: red;
+}
+
+#descripcion, #titulo{
+    border: 5px solid black; /*Un borde de 5px el tipo de borde y el negro*/
+    padding: 15px; /*para que se separe de los bordes*/
+}
+
+#titulo{
+    background: blue;
+    border: 2px dashed white;
+}
+
+/*-Selectores de clase-*/
+.parrafo2{
+    font-style: italic; /*La propiedad font-style permite definir el aspecto de una familia tipografica entre los valores: normal, italic (cursiva) y oblique*/
+    font-weight: bold; /*Especifica el peso o greuso de la letra. Algunos tipos de letra solo están disponibles en normal y bold*/
+}
