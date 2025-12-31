@@ -1,0 +1,43 @@
+/* .bbh-bartle-regular {
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/*-Forma Recomendada-*/
+/*Importar una fuente de https://fonts.google.com una vez hayamos descargado el zip lo colocamos en nuestro proyecto y aca ponemos esto @font-face que es una propiedad de css3*/
+@font-face {
+    font-family: BBH_Bartlee; /*Colocamos el nombre de la fuente inventado*/
+    src: url(../font/BBH_Bartle/BBHBartle-Regular.ttf); /*Colocamos la dirección donde esta la fuente*/
+}
+
+h1{
+    font-family: "BBH Bartle", sans-serif;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+
+    /*-Colores-*/
+    color: mediumpurple;
+    /* color: transparent; /*Transparente */
+    
+    /*Colores hexadecimales ir a https://htmlcolorcodes.com/es/*/
+    color: #000000;
+    /* color: #cccccc; */
+
+    /*-Colores RGB (la mezcla de 3 colores)*/
+    /*Para generar un color de estos ir a https://www.w3schools.com/css/css_colors_rgb.asp*/
+    color: rgb(188, 255, 80);
+}
+
+h3{
+    font: BBH_Bartlee, 'Comic Sans MS'; /*Aca ponemos el nombre de la fuente*/
+    font-size: 30px; /*Tamaño de letra*/
+    font-weight: lighter; /*El grosor de la letra*/
+    color: olive;
+}
+
+p{
+    font-family: "BBH_Bartlee";
+}

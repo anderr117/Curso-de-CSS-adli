@@ -1,0 +1,83 @@
+/*PARA BACKGROUND*/
+.container {
+    width: 70%;
+    height: 300px;
+    margin: 30px auto;
+    background: rgb(100, 100, 250);
+    /* background-image: url(../img/506103.jpg), url('../img/proteger.png'); Se pone a una de fondo */
+    background-image: url(../img/520564.jpg);
+    background-repeat: no-repeat;
+    /* background-position: top bottom right left;  */
+    /*Primer y segundo valor para el eje vertical y los otros dos valores eje horizonta (lados) puede ser como numero o palabras*/
+
+    /* background-position: top left; */
+    /*asi dice, arriba 10px y derecha 50px*/
+    background-position: top 10px right 50px;
+    background-position: center;
+    /*ancho y alto*/
+    /* background-size: 30px 20px; */
+    /*Escala la imagen lo mas posible sin estirar*/
+    /* background-size: contain; */
+    background-size: cover;
+}
+
+.atachment {
+    width: 100%;
+    height: 100vh;
+    /*Representaría el 100% de la altura de la venta grafica ayuda al responsive*/
+    background-image: url('../img/506103.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed {
+    background-attachment: fixed;
+    /*El fondo del elemento se queda fijo e interpreta que va a usar el 100% de ancho y alto de ese fondo*/
+}
+
+.degradado {
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    background: rgb(358, 100, 100);
+    background-image: linear-gradient(to top, red, pink);
+    background-image: linear-gradient(crimson 30%, pink 80%);
+}
+
+.header {
+    padding: 0.1px;
+    height: 650px;
+    background-image: linear-gradient(#00008b7e, #4683b481), url(../img/506103.jpg);
+    background-image: linear-gradient(120deg, #00008b7e 0%, #4683b481 75%), url(../img/506103.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background-image: linear-gradient(to bottom, hwb(81 18% 7% / 0.049), #009FFF); */
+}
+
+/*BOX MODEL Padding*/
+.box{
+    width: 300px;
+    height: 150px;
+}
+
+.box1{
+    background: steelblue;
+    border: 1px solid black;
+    /* margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-left: 30px; */
+    /* margin: top, right, bottom left; */
+    /* margin: 50px 30px 25px 30px; */
+    /* margin: 40px 80px;  */
+    /*Significa el primer valor arriba y abajo el segundo valor*/
+    /* margin: 40px 0 80px 0;  */
+    /*También así*/
+    /* margin: 40px 50px 80px;  */
+    /*También asi singifica que el ultimo valor toma el del segundo*/
+    /* margin: 0 auto;  */
+    /*Con auto lo centro, PARA CENTRAR EL ELEMENTO DEBE TENER UN ANCHO SI O SI*/
+}

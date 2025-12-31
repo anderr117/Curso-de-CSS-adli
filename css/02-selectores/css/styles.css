@@ -38,3 +38,76 @@ footer a {
     font-style: italic; /*La propiedad font-style permite definir el aspecto de una familia tipografica entre los valores: normal, italic (cursiva) y oblique*/
     font-weight: bold; /*Especifica el peso o greuso de la letra. Algunos tipos de letra solo están disponibles en normal y bold*/
 }
+
+.parrafo1, .parrafo3{
+    background-color: green; /*Solo sirve para el color de fondo*/;
+    color: white; /*Color de la letra*/
+    padding: 10px;
+}
+
+.parrafo3{
+    background-color: orange;
+    color: black;
+}
+
+/*-Selector de atributo-*/
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px; /*Establecer valores para el grosor del área del marge-top sería arriba*/
+    margin-bottom: 15px; /*le doy un espacio desde abajo*/
+    padding: 20px;/*Para que se separe de los bordes*/
+}
+
+#usuario form *{
+    display: block; /*Cada elemento va a estar en una linea para el solo*/
+}
+
+/*Con esto * le digo...los que al prinicipio tengan www*/
+a[href="www"]{
+    color: rgb(157, 165, 42);
+}
+
+/*Con esto $ le digo...los que al final tengan com*/
+a[href="com"]{
+    color: aquamarine;
+}
+
+/*Con esto * le digo...cualquier elemento que tenga adner117*/
+a[href="ander117"]{
+    color: chartreuse;
+}
+
+input[type="text"]{
+    margin-bottom: 15px; /*Le da el espacio entre cada elemento*/
+    padding: 10px; /*el alto de la caja del input*/
+    width: 300px; /*El ancho del input*/
+}
+
+input[type="submit"]{
+    background: green; /*El color del input*/
+    color: white; /*El color de la letra*/
+    padding: 15px; /*El alto de la caja del input*/
+    font-size: 15px; /*El amaño de letra*/
+    text-transform: uppercase; /*transforma en mayusucla al texto*/
+    border: 1px solid black; /*Cambia el borde a color negro*/
+    cursor: pointer; /*Cuando pasa el mouse se transforma en una manito*/
+}
+
+/*-Selector hijo-*/
+/*Elijo id menu después los li y por ulitmo los a*/
+#menu>li>a{
+    font-size: 18px;
+    color: red; /*Color a la letra*/
+}
+
+/*-Prioridad-*/
+/*CSS le da prioridad al ultimo pero si por ejemplo se pone un id css le da prioridad al id premia a lo mas especifico*/
+/*Pero si le pongo !important vale sobre todo*/
+
+#saludo h2{
+    background: brown;
+}
+
+h2{
+    background: purple !important;
+}
