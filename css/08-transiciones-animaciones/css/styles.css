@@ -1,0 +1,151 @@
+#boton{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid red;
+    background: #eee;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 0, 0);
+
+    /*Para una transicion suave*/
+    /* transition: 1s; */
+    /*otra forma*/
+    transition: background-color, width, color, 5s;
+}
+
+/*PARA QUE FUNCIONE UNA TRANSITION NECESITA UNA PSEUDOCLASE*/
+#boton:hover{
+    background: steelblue;
+    width: 400px;
+    color: chartreuse;
+}
+
+#caja{
+    background: tomato;
+    width: 200px;
+    height: 200px;
+    /* clip-path: circle(50% at center); */
+    clip-path: circle(50% at top left);
+    margin: 20px;
+    transition-property: clip-path; /*la propiedad que voy a aplicarle la transición*/
+    transition-duration: 2s; /*Lo que dura la transition*/
+    transition-timing-function: ease; /*las velocidades*/
+    transition-delay: 1s; /*El tiempo de espera para que la transición se ejcute*/
+    /*ease ease-in ease-in-out ease-out linear*/
+}
+
+.container:hover #caja{
+    clip-path: circle(150% at top left);
+}
+
+
+/*ANIMACIONES*/
+#caja2{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    /*Aplicar la animación*/
+    animation-name: desplazamiento;
+    /*El tiempo de la animación*/
+    animation-duration: 10s;
+    /*Si se desea hacer infinita o no*/
+    animation-iteration-count: infinite;
+    /*hay varios pero en este caso que vaya a la misma velocidad*/
+    animation-timing-function: linear;
+}
+
+/*PARA HACER LA ANIMACIÓN PRIMERO DEFINIR LOS @keyframes*/
+
+/*MANERA CORTA*/
+
+/*1 le ponemos nombre desplazamiento*/
+
+/*2 le colocamos como empieza y como termina con form y to*/
+
+
+
+/* @keyframes desplazamiento{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+} */
+
+
+/*FORMA COMPLETA*/
+/*Lo desplazamos lado a lado*/
+/* @keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 1090px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+} */
+
+/*Aca lo hacemos rotar
+(deg se refiere a grados, especifica ángulos de rotación)*/
+/* @keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1090px;
+        transform: rotate(370deg);
+    }
+} */
+
+/*Lo hacemos rotar y se va conviertiendo en pelota*/
+/* @keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1090px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+} */
+
+/*Lo hago rotar y se va conviertiendo en pelota y cambia de color y cambia el borde*/
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1090px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+    75%{
+        background: red;
+    }
+    77%{
+        border: 10px dashed blue;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+/*pseudoclase me va a poner todo esto en la primera de la lista*/
+ul li:first-child{
+    color: purple;
+    font-weight: bold;
+}
+
+/*Me deja elegir el elemento que quiero poniendo el numero*/
+ul li:nth-child(2){
+    color: orange;
+    font-weight: bold;
+}
+
+/*Selecciona el ultimo elemento*/
+ul li:last-child{
+    color: gray;
+    font-weight: bold;
+}
+
+#mi-enlace{
+    font-size: 30px;
+    color: gray;
+}
+
+/*Si no se ha abierto o ingresado al enlace se marca de ese color*/
+#mi-enlace:link{
+    color: red;
+}
+
+/*Si ya de visitó el sitio o el enlace*/
+#mi-enlace:visited{
+    color: orangered;
+}
+
+.nav__links{
+    background: red;
+}
+
+/*Evento target*/
+.nav__links:target{
+    background-color: blue;
+}
+
+
+/*:root la raiz del documento es ma especifico que html{}*/
+:root{
+    --blue:blue; /*Creamos una variable*/
+}
+
+h1{
+    color: var(--blue);
+}
+
+/*PSEUDOELEMENTOS*/
+/*PSEUDOELEMENTOS se señala con :: por ejemplo p::selection seria que la etique p si la pintamos mouse haria tal cosa. También esta el ::first-line seria la primer linea del parrafo ::first-letter la primera letra del parrafo
+También existe el ::placeholder para un input, ejemplo input[type="text"]::placeholder y el ::before significa poner tal cosa antes del contenido del elemento en cuestión y ::after seria despues y la forma de ingresar el contenido es con content si o si content ha que agregarlo aunque no pongamos nada de texto, después podemos agregar un elemento si queremos*/
+
+/* p::selection{
+    background-color: blueviolet;
+} */
+
+/* p::first-line{
+    background-color: brown;
+} */
+
+p::first-letter{
+    background-color: chartreuse;
+}
+
+input[type="text"]::placeholder{
+    color: red;
+}
+
+p::before{
+    content: '';
+    background-image: url('../images/list_3876184.png');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0px;
+}

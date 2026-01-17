@@ -1,0 +1,186 @@
+/*Ejercicio completo con html y css
+* 1. Crea un documento html y vinculado con css
+* 2. Crea una estructura html que cuente con un contenedor general,
+cabecera, menu, seccion de contenido principal, barra lateral,
+elementos dentro del contenedor principal, y footer
+
+* 3. Todo el contenido debe estar dentro del contenedor general
+y su ancho deberá ser de 1200px y estar centrado.
+* 4. Header debe ocupar el 100% del ancho y tener un texto grande centrado
+* 5. Menu debe tener los mismos elementos uno al lado del otro.
+* 6. el contenido principal debe tener un ancho de 70%.
+* 7. El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas.
+* 8. La barra lateral debe tener un ancho de 30%.
+* 9. El footer debe tener un ancho del 100% del div que lo contiene
+y estar debajo del otro. 
+*/
+
+* {
+    /*Margin para que no haya espacios*/
+    margin: 0px;
+    /*Padding para que se separe de los bordes*/
+    padding: 0px;
+    /*Para que no haya subrayados*/
+    text-decoration: none;
+    /*Aplicar fuente*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general {
+    width: 1200px;
+    margin: 0px auto;
+    /* margin-top: 20px; */
+    border: 1px solid #ccc;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: blue;
+    text-align: center;
+    line-height: 90px;
+}
+
+#menu {
+    background: #eeeeee;
+}
+
+#menu ul li {
+    /*Coloca los elementos uno al lado del otro*/
+    /* display: inline-block; */
+
+    /*Aquí usaré la manera de flotado*/
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 15px;
+    color: #444444;
+}
+
+#menu ul li:hover {
+    background: rgb(5, 33, 87);
+    cursor: pointer;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#contenido {
+    width: 69%;
+    float: left;
+}
+
+#lateral {
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    overflow: hidden;
+    /* overflow: scroll;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 10px; */
+}
+
+#contenido h1 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    color: #444444;
+    text-shadow: 1px 5px 2px gray;
+}
+
+#contenido .caja {
+    width: 40%;
+    height: 250px;
+    background: #ccc;
+    border: 1px solid #ccc;
+    color: white;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    line-height: 200px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+    border-radius: 30px 20px 5px 10px;
+    border-radius: 999px;
+}
+
+.sombra-interior {
+    box-shadow: 5px 5px 10px gray inset !important;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid gray;
+}
+
+.libre{
+    /*POSICION static es el que esta por defecto, es estatico, no se desplaza el elemento.
+    POSICION relative posiciona el elemento signififca que ya podemos usar: top, left, right, bottom y
+    se mueve desde su posicion original.
+    POSICIONA absolut, elimina la posición original (por defecto se pone encima del elemento y
+    la posiciona pasa a ser el navegador pero si huabiera un ancestro como padre su posición se basa en ese padre...se convierte en una CAJA LIBRE,
+    ESTA POR FUERA DE TODO ENTONCES PSOCION ABSOLUTA ES PARA PODER MOVER LA CAJA)
+    z-index seria para superponer un elemento arriba del otro según el valor numerico, mas fixed la posicion pasa a ser el navegador y no tiene en
+    cuenta los ancestros y se queda fijo en su posición
+    fiexd la posición pasa a ser el navegador y no tiene en cuenta los ancestros y se queda fijo en su posición*/
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.libre1{
+    /*Superpone el elemento sobre otros, se pone encima de otros elementos*/
+    z-index: 1;
+}
+
+.libre2{
+    background-color: green;
+    top: 280px;
+    z-index: 2;
+}
+
+.fija{
+    /*fixed significa que acompaña el scroll*/
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+
+}

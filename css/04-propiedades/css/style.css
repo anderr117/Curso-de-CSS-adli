@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    box-sizing: content-box;
+    /*Es el que esta por defecto, agrega pixel a la caja al tener mas contenido, padding o border...*/
+}
+
 /*PARA BACKGROUND*/
 .container {
     width: 70%;
@@ -58,12 +64,12 @@
 }
 
 /*BOX MODEL Padding*/
-.box{
+.box {
     width: 300px;
     height: 150px;
 }
 
-.box1{
+.box1 {
     background: steelblue;
     border: 1px solid black;
     /* margin-top: 50px;
@@ -80,4 +86,67 @@
     /*También asi singifica que el ultimo valor toma el del segundo*/
     /* margin: 0 auto;  */
     /*Con auto lo centro, PARA CENTRAR EL ELEMENTO DEBE TENER UN ANCHO SI O SI*/
+    margin-bottom: 50px;
+}
+
+.box2 {
+    padding: 20px;
+    background: rebeccapurple;
+    margin-top: 30px;
+    margin-left: 20px;
+    overflow: hidden;
+    /*Todo lo que se desborda lo oculta*/
+    border: 2px solid steelblue;
+}
+
+.box{
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    /* border: width style color;
+    border: 10px dashed brown; */
+
+    /* border-width: top right bottom left;
+    border-style: top right bottom left;
+    border-color: right bottom left; */
+
+    /* border-top: 10px solid brown;
+    border-right: 5px dashed white;
+    border-bottom: 8px double black;
+    border-left: 8px dotted steelblue; */
+
+    /*https://developer.mozilla.org/es/*/
+    /*Generador de bordes https://cssgenerator.org/border-css-generator.html*/
+
+    border-top-width: 20px;
+    border-top-style: double;
+    border-top-color: crimson;
+
+    border-right-width: 30px;
+    border-right-style: dashed;
+    border-right-color: white;
+
+    border-bottom-width: 25px;
+    border-bottom-style: solid;
+    border-bottom-color: steelblue;
+
+    border-left-width: 15px;
+    border-left-style: dotted;
+    border-left-color: violet;
+}
+
+.img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*Si la imagen se empieza a estirar, entonces lo adapta para que se vea bien*/
+    margin: 20px auto;
+    border-radius: 50%; /*Redondea los bordes*/
+    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 100px;
 }
