@@ -1,0 +1,17 @@
+:root{
+    --color-principal: #3498db;
+    --fuente-principal: Arial, sans-serif;
+    --tamaño-titulo: 28px
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    color: var(--color-principal);
+    font-family: var(--fuente-principal);
+    font-size: var(--tamaño-titulo)
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    margin: 10px;
+    padding: 5px;
+    background: yellow;
+    text-align: center;
+}
+
+header h1{
+    font-size: 20px;
+    font-style: italic;
+}
+
+section{
+    margin: 10px;
+    padding: 5px;
+    background: black;
+}
+
+section p{
+    color: white;
+    font-style: inherit;
+}
+
+footer{
+    margin: 2px;
+    padding: 2px;
+    background: gray;
+    color: white;
+    text-align: center;
+}

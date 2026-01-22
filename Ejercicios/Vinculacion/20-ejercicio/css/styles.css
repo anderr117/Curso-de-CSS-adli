@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(#ccc, #f2f);
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+section{
+    margin: 10px;
+    padding: 5px;
+    background: radial-gradient(#BE27F5, #ccc);
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+}
+
+footer{
+    background: rgb(189, 25, 170);
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,15 @@
+/*-Limpiamos margenes y padding
+- agregamos tipografías al documento
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Estilos de h1*/
+h1 {
+    font-size: 24px;
+    background-color: aqua;
+    text-align: center;
+}
