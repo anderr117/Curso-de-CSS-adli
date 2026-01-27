@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.detalle p{
+    font-size: x-large;
+    color: rgb(230, 0, 0);
+    font-style: italic;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 28px;
+    margin: 10px;
+    padding: 5px;
+    background: rgba(2, 255, 19, 0.454);
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 14px;
+}
+
+.parrafo{
+    color: rgb(0, 106, 255);
+    text-align: right;
+}

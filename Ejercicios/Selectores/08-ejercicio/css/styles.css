@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#and{
+    font-size: 14px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
