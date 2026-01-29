@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a[href="ander"]{
+    color: rgb(255, 254, 254);
+    font-size: 24px;
+    margin: 10px;
+    padding: 8px;
+    text-decoration: none;
+    background: rgb(15, 128, 0);
+    border-radius: 5px;
+}

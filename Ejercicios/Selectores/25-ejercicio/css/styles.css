@@ -1,0 +1,33 @@
+/*SELECTOR UNIVERSAL*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/*ETIQUETA*/
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/*CLASE*/
+.definicion {
+    text-align: justify;
+    color: gray;
+    font-style: italic;
+}
+
+/*ID*/
+#contenido {
+    background: black;
+    margin: 10px;
+    padding: 8px;
+}
+
+/*ATRIBUTO*/
+a[href="ander"] {
+    text-decoration: none;
+    color: green;
+}

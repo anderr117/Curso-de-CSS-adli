@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*#contenedorSolo la caja del contenedor principal.#contenedor pSolo los párrafos dentro del contenedor.#contenedor *Cualquier etiqueta (hijos, nietos, etc.) dentro del contenedor.*/
+
+#contenedor *{
+    border: 1px solid red;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-style: italic;
+}

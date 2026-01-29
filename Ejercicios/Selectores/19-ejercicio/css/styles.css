@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Prioriza la instruccion que tiene !important*/
+h1{
+    color: red !important;
+    color: aqua;
+}

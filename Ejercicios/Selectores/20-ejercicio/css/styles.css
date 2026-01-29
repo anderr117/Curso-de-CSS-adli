@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sect, #title, #subtitle{
+    color: rgb(255, 60, 0);
+    text-align: center;
+    font-style: italic;
+}
