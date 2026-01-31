@@ -1,0 +1,24 @@
+:root{
+    --font-titulo: 3rem;
+    --font-subitulo: 2rem;
+    --font-parrafo: 1rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h1{
+    font-size: var(--font-titulo);
+}
+
+h2{
+    font-size: var(--font-subitulo);
+}
+
+p{
+    font-size: var(--font-parrafo);
+}

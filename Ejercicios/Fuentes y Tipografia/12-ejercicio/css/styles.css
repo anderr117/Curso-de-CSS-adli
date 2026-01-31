@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../fuente/BBH_Bartle/BBHBartle-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'MiFuente';
+}

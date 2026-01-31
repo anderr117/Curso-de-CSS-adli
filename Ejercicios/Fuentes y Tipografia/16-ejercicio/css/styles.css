@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Las unidades relativas en CSS (como rem, em, %) ajustan el tamaño de la fuente en función de otros elementos, permitiendo diseños responsivos y accesibles*/
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 200%;
+}
