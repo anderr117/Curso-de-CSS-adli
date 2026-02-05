@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#blog h2{
+    font-size: 2.5em;
+}
+
+#blog p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 2cap;
+    word-spacing: 0.2cap;
+}
