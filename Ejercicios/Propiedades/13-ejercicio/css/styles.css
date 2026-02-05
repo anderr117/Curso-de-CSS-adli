@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*
+Primer valor (20px): Es el inicio, siempre es ARRIBA.
+
+Segundo valor (auto): Son los LATERALES (Izquierda y Derecha). Se comparten porque están en el mismo eje horizontal.
+
+Tercer valor (40px): Es el final, siempre es ABAJO.*/
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background: green;
+    margin: 20px auto 40px;
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caja {
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(120deg, #0101367e 0%, #65b44681 75%), url(../img/pexels-dario-rawert-724203352-26886130.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

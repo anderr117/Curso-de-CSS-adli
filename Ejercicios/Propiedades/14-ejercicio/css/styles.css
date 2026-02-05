@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background: #745;
+    border: 4px solid black;
+}

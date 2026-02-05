@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background: blue;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 8px solid black;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background: #374;
+    border-width: 5px 3px 10px 20px;
+    border-style: solid dashed dotted double;
+    border-color: red gray blue yellow;
+}

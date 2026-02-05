@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caja {
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(#8b00157e, #00233f81);
+}
