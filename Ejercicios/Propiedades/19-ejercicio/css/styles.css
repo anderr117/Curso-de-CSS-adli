@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mas_contenido{
+    width: 400px;
+    height: 200px;
+    background: red;
+    overflow: scroll;
+}
