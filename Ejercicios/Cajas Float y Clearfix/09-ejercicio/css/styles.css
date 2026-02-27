@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    background-color: red;
+    text-align: center;
+}
+
+main{
+    flex: 1;
+    background-color: greenyellow;
+}
+
+footer{
+    background-color: rgb(129, 4, 246);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}

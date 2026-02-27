@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenedor::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columna-principal{
+    width: 70%;
+    height: 400px;
+    float: left;
+    background-color: rgb(130, 200, 238);
+}
+
+.columna-lateral{
+    width: 30%;
+    height: 400px;
+    float: right;
+    background: gray;
+}

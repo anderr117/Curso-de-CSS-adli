@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.contenedor::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columna-principal {
+    width: 66%;
+    height: 200px;
+    float: left;
+    background: lightblue;
+    margin-right: 4%;
+}
+
+.columna-secundaria {
+    width: 30%;
+    height: 200px;
+    float: left;
+    background-color: lightcoral;
+}

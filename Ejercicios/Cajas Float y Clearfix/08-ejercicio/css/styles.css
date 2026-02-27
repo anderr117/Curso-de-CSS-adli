@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    font-size: 1.5rem;
+    margin: 8px;
+    padding: 8px;
+    color: rgb(131, 0, 254);
+    transition: 1.5s ease;
+    text-align: center;
+}
+
+
+aside{
+    width: 25%;
+    margin: 10px;
+    padding: 6px;
+}
+
+aside ul{
+    margin: 10px;
+    padding: 8px;
+}
+
+aside li{
+    list-style: none;
+    margin: 18px;
+}
+
+aside li a{
+    text-decoration: none;
+    color: rgb(129, 4, 246);
+    font-size: 1.2rem;
+    margin: 2px;
+    padding: 2px;
+    transition: transform 0.3s ease;
+    border-bottom: solid 2px rgb(129, 4, 246);
+    padding: 6px;
+}
+
+aside li:hover{
+    transform: scale(0.98);
+}
+
+aside li a:hover{
+    color: white;
+    background-color: rgb(129, 4, 246);;
+    border-radius: 10px;
+}
+
+.main-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+main{
+    margin: 10px;
+    padding: 8px;
+}
+
+
+#home{
+    margin: 10px;
+    padding: 8px;
+}
+
+#home #section_home h2{
+    font-size: 2rem;
+    margin: 8px;
+    padding: 6px;
+    border: 1px solid rgb(96, 4, 243);
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home #section_home h2:hover{
+    
+}
+
+#home #section_home p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0.1cap;
+    line-height: 2cap;
+}
+
+#home #section_home p strong a{
+    color: rgb(96, 4, 243);
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+#home #section_home p a:hover{
+    transform: scale(1.04);
+}
+
+#productos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#productos ul li a {
+    text-decoration: none;
+    color: rgb(96, 4, 243);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid rgb(96, 4, 243);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+#productos ul li a:hover {
+    background-color: rgb(96, 4, 243);
+    color: white;
+    transform: scale(1.1);
+}
+
+#todos{
+    width: 100%;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid rgb(96, 4, 243);
+}
+
+#todos .card{
+    width: 22%;
+    height: 10%;
+    background: rgb(96, 4, 243);
+    margin: 10px;
+    padding: 8px;
+}
+
+#todos .card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}

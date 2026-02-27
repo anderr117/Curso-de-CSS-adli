@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caja1, .caja2{
+    width: 200px;
+    height: 200px;
+}
+
+.caja1{
+    float: left;
+    background: green;
+}
+
+.caja2{
+    float: right;
+    background: red;
+}
+
+.contenedor::after{
+    content: "";
+    display: table;
+    clear: both;
+}

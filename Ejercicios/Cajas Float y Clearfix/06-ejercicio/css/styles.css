@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-height: 1000px;
+    background: red;
+}
+
+/* .contenedor::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.caja1, .caja2, .caja3{
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.caja1{
+    background-color: black;
+}
+
+.caja2{
+    background-color: blue;
+}
+
+.caja3{
+    background-color: green;
+}

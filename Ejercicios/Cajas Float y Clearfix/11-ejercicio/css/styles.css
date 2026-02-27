@@ -1,0 +1,19 @@
+aside {
+    width: 30%;
+    float: left;
+    background-color: rgba(129, 4, 246, 0.5);
+    height: 150px;
+}
+
+main {
+    width: 70%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 200px;
+}
+
+footer {
+    clear: both;
+    background-color: red;
+    color: white;
+}
