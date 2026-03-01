@@ -1,0 +1,294 @@
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --accent-teal: #008284;
+    --text-dark: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #dae9eb, #e3e0f3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-wrapper {
+    width: 95vw;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 40px;
+    display: flex;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar {
+    width: 260px;
+    padding: 40px 20px;
+    border-right: 1px solid var(--glass-border);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+    padding-left: 20px;
+}
+
+.nav-group {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.nav-group li a {
+    text-decoration: none;
+    color: #64748b;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.nav-group li a.active {
+    background: var(--accent-teal);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 130, 132, 0.2);
+}
+
+.nav-group li a i {
+    width: 20px;
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    color: var(--text-dark);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon-btn {
+    background: var(--glass-bg);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+    color: #64748b;
+}
+
+.profile-pill {
+    background: var(--glass-bg);
+    padding: 5px 15px 5px 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--glass-border);
+}
+
+.avatar-container img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.col-left {
+    flex: 1.6 1 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.col-right {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 35px;
+    padding: 25px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 1.1rem;
+}
+
+.card-header a {
+    font-size: 0.85rem;
+    color: var(--accent-teal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo-box img {
+    height: 50px;
+}
+
+.vs-circle {
+    background: #ff4d6d;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.mini-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.mini-card {
+    background: var(--glass-bg);
+    padding: 25px;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mini-card i {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.mini-card span {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.mini-card h4 {
+    font-size: 1.4rem;
+}
+
+.icon-purple {
+    color: #8b5cf6;
+}
+
+.icon-orange {
+    color: #f59e0b;
+}
+
+.icon-teal {
+    color: #14b8a6;
+}
+
+.icon-pink {
+    color: #ec4899;
+}
+
+.training-banner {
+    background: linear-gradient(135deg, #0284c7, #38bdf8);
+    color: white;
+    padding: 30px;
+    border-radius: 35px;
+}
+
+.training-banner button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: #0284c7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th {
+    text-align: left;
+    font-size: 0.75rem;
+    color: #64748b;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.custom-table td {
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.td-team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

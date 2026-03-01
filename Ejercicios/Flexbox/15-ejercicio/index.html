@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoachPro Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="logo">CoachPro</div>
+            <nav class="options">
+                <ul class="nav-group">
+                    <li><a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-users"></i> Squad</a></li>
+                    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Messenger</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-line"></i> Statistic</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Finance</a></li>
+                </ul>
+                <ul class="nav-group second">
+                    <li><a href="#"><i class="fa-solid fa-right-left"></i> Transfers</a></li>
+                    <li><a href="#"><i class="fa-solid fa-graduation-cap"></i> Youth academy</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="welcome">
+                    <span>Welcome back, Hansi Flick</span>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="user-actions">
+                    <div class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="icon-btn"><i class="fa-solid fa-bell"></i></div>
+                    <div class="profile-pill">
+                        <div class="avatar-container">
+                            <img src="./icons/profile_circle_icon_242774.ico" alt="Hansi Flick">
+                        </div>
+                        <span>Hansi Flick</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="grid-layout">
+                <div class="col-left">
+                    <section class="glass-card next-game">
+                        <div class="card-header">
+                            <h3>Next game</h3>
+                            <a href="#">View calendar</a>
+                        </div>
+                        <div class="game-details">
+                            <div class="team">
+                                <div class="logo-box"><img
+                                        src="./Img/fc_barcelona_footballteam_18015.png"
+                                        alt="FCB"></div>
+                                <span>Barcelona</span>
+                            </div>
+                            <div class="vs-circle">vs</div>
+                            <div class="team">
+                                <div class="logo-box"><img
+                                        src="./icons/real_madrid_footballteam_18009.ico"
+                                        alt="RMA"></div>
+                                <span>Real Madrid</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="glass-card standings">
+                        <div class="card-header">
+                            <h3>Standings</h3>
+                            <a href="#">View all</a>
+                        </div>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>TEAM</th>
+                                    <th>MP</th>
+                                    <th>W</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="td-team"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_logo.svg/20px-FC_Barcelona_logo.svg.png">
+                                        Barcelona</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="td-team"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/20px-Real_Madrid_CF.svg.png">
+                                        Real Madrid</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>21</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+
+                <div class="col-right">
+                    <section class="glass-card stats">
+                        <div class="card-header">
+                            <h3>Games statistic</h3>
+                            <a href="#">View all</a>
+                        </div>
+                        <div class="stat-bar-box">
+                            <div class="bar-info"><span>PL 8</span><span>VIC 6</span></div>
+                            <div class="progress-bg">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mini-cards-container">
+                        <div class="mini-card">
+                            <i class="fa-solid fa-futbol icon-purple"></i>
+                            <span>POSSESSION</span>
+                            <h4>65%</h4>
+                        </div>
+                        <div class="mini-card">
+                            <i class="fa-solid fa-wallet icon-orange"></i>
+                            <span>BUDGET</span>
+                            <h4>$240.6m</h4>
+                        </div>
+                        <div class="mini-card">
+                            <i class="fa-solid fa-star icon-teal"></i>
+                            <span>SCORE</span>
+                            <h4>7.2</h4>
+                        </div>
+                        <div class="mini-card">
+                            <i class="fa-solid fa-tag icon-pink"></i>
+                            <span>PRICE</span>
+                            <h4>$690.2m</h4>
+                        </div>
+                    </div>
+
+                    <div class="training-banner">
+                        <div class="banner-text">
+                            <small>DON'T FORGET</small>
+                            <h3>Setup training for next week</h3>
+                            <button>Go to training center</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

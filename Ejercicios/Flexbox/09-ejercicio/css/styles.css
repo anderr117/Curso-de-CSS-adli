@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card.c2 {
+    flex-grow: 2;
+    background: blueviolet;
+}
